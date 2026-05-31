@@ -1,5 +1,5 @@
 <script setup>
-import StartScreen from './Components/StartScreen.vue'
+import StartScreen from './Components/StartScreen/StartScreen.vue'
 </script>
 
 <template>
