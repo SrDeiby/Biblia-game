@@ -28,7 +28,7 @@ body {
   min-height: 100vh;
   background:
     linear-gradient(rgba(44, 26, 14, 0.7), rgba(44, 26, 14, 0.8)),
-    url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65?q=80&w=1974&auto=format&fit=crop');
+    url('./src/assets/imagenes/Biblia.jpg');
 
   background-size: cover;
   background-position: center;
@@ -118,6 +118,18 @@ button {
   background: var(--brown-mid);
   color: var(--cream);
 }
+
+.btn-tertiary {
+  background: transparent;
+  border: 2px solid var(--olive);
+  color: var(--olive-light);
+}
+
+.btn-tertiary:hover {
+  background: var(--olive);
+  color: var(--olive-light);
+}
+
 
 .verse-box {
   background: var(--parchment-dark);

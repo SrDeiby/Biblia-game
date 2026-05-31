@@ -3,5 +3,5 @@ import StartScreen from './Components/StartScreen.vue'
 </script>
 
 <template>
-  <StartScreen />
+ <router-view />
 </template>

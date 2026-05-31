@@ -1,9 +1,20 @@
+
 export default {
   name: 'StartScreen',
-
+ 
+  mounted() {
+    this.$audio.play()
+  },
+ 
+ 
   methods: {
     startGame() {
-      alert('¡El juego comenzará pronto!')
+      this.$router.push('/map')
+    },
+ 
+    ShutDownAudio() {
+      this.$audio.toggle()
     }
   }
 }
+ 

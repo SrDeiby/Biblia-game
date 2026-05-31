@@ -21,6 +21,10 @@
           <button class="btn-secondary">
             Ver Instrucciones
           </button>
+
+          <button class="btn-tertiary" @click="ShutDownAudio">
+            Sonido
+          </button>
         </div>
 
         <div class="verse-box">
