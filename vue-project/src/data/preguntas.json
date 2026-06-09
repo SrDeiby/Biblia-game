@@ -1,0 +1,153 @@
+{
+  "Belén": [
+    {
+      "id": 1,
+      "pregunta": "¿En qué ciudad nació Jesús?",
+      "opciones": ["Nazaret", "Jerusalén", "Belén", "Jericó"],
+      "respuesta": "Belén",
+      "versiculo": "Miqueas 5:2"
+    },
+    {
+      "id": 2,
+      "pregunta": "¿Qué rey de Israel también nació en Belén?",
+      "opciones": ["Salomón", "Saúl", "David", "Ezequías"],
+      "respuesta": "David",
+      "versiculo": "1 Samuel 17:12"
+    },
+    {
+      "id": 3,
+      "pregunta": "¿Quiénes siguieron la estrella hasta Belén para visitar a Jesús?",
+      "opciones": ["Los pastores", "Los magos del oriente", "Los fariseos", "Los levitas"],
+      "respuesta": "Los magos del oriente",
+      "versiculo": "Mateo 2:1"
+    },
+    {
+      "id": 4,
+      "pregunta": "¿Qué rey ordenó matar a los niños menores de 2 años en Belén?",
+      "opciones": ["Herodes", "Pilato", "Nabucodonosor", "Faraón"],
+      "respuesta": "Herodes",
+      "versiculo": "Mateo 2:16"
+    },
+    {
+      "id": 5,
+      "pregunta": "¿Dónde fue colocado Jesús al nacer en Belén?",
+      "opciones": ["En una cama", "En el templo", "En un pesebre", "En una cueva sellada"],
+      "respuesta": "En un pesebre",
+      "versiculo": "Lucas 2:7"
+    }
+  ],
+
+  "Jerusalén": [
+    {
+      "id": 1,
+      "pregunta": "¿Qué rey construyó el primer Templo en Jerusalén?",
+      "opciones": ["David", "Salomón", "Roboam", "Ezequías"],
+      "respuesta": "Salomón",
+      "versiculo": "1 Reyes 6:1"
+    },
+    {
+      "id": 2,
+      "pregunta": "¿Cómo se llama el lugar donde Jesús fue crucificado, cerca de Jerusalén?",
+      "opciones": ["Monte Sinaí", "Monte de los Olivos", "Gólgota", "Monte Carmelo"],
+      "respuesta": "Gólgota",
+      "versiculo": "Juan 19:17"
+    },
+    {
+      "id": 3,
+      "pregunta": "¿En qué lugar de Jerusalén oró Jesús la noche antes de su arresto?",
+      "opciones": ["El Templo", "Getsemaní", "El Cenáculo", "Betania"],
+      "respuesta": "Getsemaní",
+      "versiculo": "Mateo 26:36"
+    },
+    {
+      "id": 4,
+      "pregunta": "¿Qué evento bíblico ocurrió en Jerusalén cincuenta días después de la resurrección?",
+      "opciones": ["La transfiguración", "La ascensión", "Pentecostés", "La última cena"],
+      "respuesta": "Pentecostés",
+      "versiculo": "Hechos 2:1"
+    },
+    {
+      "id": 5,
+      "pregunta": "¿En qué año fue destruido el Templo de Jerusalén por los babilonios?",
+      "opciones": ["586 a.C.", "70 d.C.", "332 a.C.", "1000 a.C."],
+      "respuesta": "586 a.C.",
+      "versiculo": "2 Reyes 25:9"
+    }
+  ],
+
+  "Galilea": [
+    {
+      "id": 1,
+      "pregunta": "¿En qué lago de Galilea Jesús calmó la tempestad?",
+      "opciones": ["Mar Muerto", "Lago Huleh", "Mar de Galilea", "Río Jordán"],
+      "respuesta": "Mar de Galilea",
+      "versiculo": "Marcos 4:39"
+    },
+    {
+      "id": 2,
+      "pregunta": "¿Cuál fue el primer milagro de Jesús, realizado en Caná de Galilea?",
+      "opciones": ["Sanar a un ciego", "Multiplicar panes", "Convertir agua en vino", "Resucitar a Lázaro"],
+      "respuesta": "Convertir agua en vino",
+      "versiculo": "Juan 2:1-11"
+    },
+    {
+      "id": 3,
+      "pregunta": "¿A qué pescadores de Galilea llamó Jesús primero como discípulos?",
+      "opciones": ["Felipe y Bartolomé", "Pedro y Andrés", "Santiago y Juan", "Mateo y Tomás"],
+      "respuesta": "Pedro y Andrés",
+      "versiculo": "Mateo 4:18"
+    },
+    {
+      "id": 4,
+      "pregunta": "¿Dónde predicó Jesús el famoso 'Sermón del Monte'?",
+      "opciones": ["Jerusalén", "Jericó", "Galilea", "Samaria"],
+      "respuesta": "Galilea",
+      "versiculo": "Mateo 5:1"
+    },
+    {
+      "id": 5,
+      "pregunta": "¿Cuántos panes usó Jesús para alimentar a la multitud en Galilea?",
+      "opciones": ["Dos", "Siete", "Cinco", "Doce"],
+      "respuesta": "Cinco",
+      "versiculo": "Juan 6:9"
+    }
+  ],
+
+  "Nazaret": [
+    {
+      "id": 1,
+      "pregunta": "¿Quién recibió el anuncio del ángel Gabriel en Nazaret?",
+      "opciones": ["Isabel", "María", "Ana", "Salomé"],
+      "respuesta": "María",
+      "versiculo": "Lucas 1:26-28"
+    },
+    {
+      "id": 2,
+      "pregunta": "¿Cuál era el oficio de José, padre adoptivo de Jesús, en Nazaret?",
+      "opciones": ["Pescador", "Carpintero", "Alfarero", "Pastor"],
+      "respuesta": "Carpintero",
+      "versiculo": "Mateo 13:55"
+    },
+    {
+      "id": 3,
+      "pregunta": "¿Qué dijo Natanael al escuchar que Jesús era de Nazaret?",
+      "opciones": ["¡Bendito sea!", "¿De Nazaret puede salir algo bueno?", "¡El Mesías ha llegado!", "¡Alabado sea Dios!"],
+      "respuesta": "¿De Nazaret puede salir algo bueno?",
+      "versiculo": "Juan 1:46"
+    },
+    {
+      "id": 4,
+      "pregunta": "¿Qué hicieron los habitantes de Nazaret cuando Jesús predicó en su sinagoga?",
+      "opciones": ["Lo aclamaron como rey", "Lo ignoraron", "Intentaron despeñarlo", "Lo bautizaron"],
+      "respuesta": "Intentaron despeñarlo",
+      "versiculo": "Lucas 4:29"
+    },
+    {
+      "id": 5,
+      "pregunta": "¿Hasta qué edad aproximada vivió Jesús en Nazaret antes de su ministerio público?",
+      "opciones": ["20 años", "25 años", "30 años", "33 años"],
+      "respuesta": "30 años",
+      "versiculo": "Lucas 3:23"
+    }
+  ]
+}

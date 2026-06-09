@@ -31,10 +31,15 @@ export default {
   },
  
   methods: {
-    selectRegion(name) {
-      this.selectedRegion = name
-      this.$emit('region-selected', name)
-    }
+selectRegion(name) {
+  const routeMap = {
+    'Belén':     'belen',
+    'Jerusalén': 'jerusalen',
+    'Galilea':   'galilea',
+    'Nazaret':   'nazaret'
+  }
+  this.$router.push(`/game/${routeMap[name]}`)
+}
 
   }
 }
