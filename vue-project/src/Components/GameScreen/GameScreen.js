@@ -1,5 +1,8 @@
 import preguntas from '../../data/preguntas.json'
-
+import correct from '../../assets/audio/correct.mp3'
+import incorrect from '../../assets/audio/incorrect.mp3'
+import winner from '../../assets/audio/winner.mp3'
+import tryagain from '../../assets/audio/tryagain.mp3'
 
 export default {
   name: 'GameScreen',
@@ -88,9 +91,16 @@ mounted() {
       this.selectedOption = opcion
       this.answered = true
       this.isCorrect = opcion === this.currentQuestion.respuesta
+      
 
       if (this.isCorrect) {
         this.score++
+        const sound = new Audio(correct)
+        sound.play()
+      } 
+      if (!this.isCorrect) {
+        const sound = new Audio(incorrect)
+        sound.play()
       }
     },
 
@@ -105,13 +115,24 @@ mounted() {
     next() {
       if (this.currentIndex + 1 >= this.total) {
         this.finished = true
+      if (this.score === this.total) {
+        const sound = new Audio(winner)
+        sound.play()
+      } else {
+        const sound = new Audio(tryagain)
+        sound.play()
+      }
+
         return
       }
+      
 
       this.currentIndex++
       this.selectedOption = null
       this.answered = false
       this.isCorrect = false
+
+      
     },
 
     restart() {
@@ -127,5 +148,6 @@ mounted() {
     goBack() {
       this.$router.push('/map')
     }
+
   }
 }

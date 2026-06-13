@@ -1,9 +1,5 @@
-
-
 export default {
   name: 'MapScreen',
- 
-
 
   data() {
     return {
@@ -12,34 +8,37 @@ export default {
       regionData: {
         'Galilea': {
           icon: '🐟',
-          desc: 'Tierra de pescadores y milagros. Jesús pasó gran parte de su ministerio aquí, llamando a sus primeros discípulos en sus orillas.'
+          desc: 'Tierra de pescadores y milagros. Jesús pasó gran parte de su ministerio aquí.'
         },
         'Nazaret': {
           icon: '🏡',
-          desc: 'Ciudad donde Jesús creció con María y José. Aquí vivió la mayor parte de su vida antes de su ministerio público.'
+          desc: 'Ciudad donde Jesús creció con María y José antes de su ministerio público.'
         },
         'Jerusalén': {
           icon: '✡️',
-          desc: 'La Ciudad Santa. Capital espiritual de Israel, lugar del Templo, la Última Cena, la crucifixión y la resurrección.'
+          desc: 'La Ciudad Santa. Lugar del Templo, la Última Cena, la crucifixión y la resurrección.'
         },
         'Belén': {
           icon: '⭐',
-          desc: 'Ciudad del nacimiento de Jesús y ciudad natal del rey David. A solo 9 km al sur de Jerusalén.'
+          desc: 'Ciudad del nacimiento de Jesús y ciudad natal del rey David.'
         }
       }
     }
   },
- 
-  methods: {
-selectRegion(name) {
-  const routeMap = {
-    'Belén':     'belen',
-    'Jerusalén': 'jerusalen',
-    'Galilea':   'galilea',
-    'Nazaret':   'nazaret'
-  }
-  this.$router.push(`/game/${routeMap[name]}`)
-}
 
+  methods: {
+    selectRegion(name) {
+      this.selectedRegion = name
+    },
+
+    goToGame() {
+      const routeMap = {
+        'Belén':     'belen',
+        'Jerusalén': 'jerusalen',
+        'Galilea':   'galilea',
+        'Nazaret':   'nazaret'
+      }
+      this.$router.push(`/game/${routeMap[this.selectedRegion]}`)
+    }
   }
 }
