@@ -22,9 +22,9 @@
             Ver Instrucciones
           </button>
 
-          <button class="btn-tertiary" @click="ShutDownAudio">
-            Sonido
-          </button>
+         <button class="btn-tertiary" @click="shutDownAudio">
+  {{ audioOn ? '🔊' : '🔇' }}
+</button>
         </div>
 
         <div class="verse-box">

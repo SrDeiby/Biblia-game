@@ -1,6 +1,8 @@
 .map-screen {
   height: 100vh;
-  background: linear-gradient(rgba(44, 26, 14, 0.88), rgba(44, 26, 14, 0.95));
+   background:
+    linear-gradient(rgba(44, 26, 14, 0.7), rgba(44, 26, 14, 0.8)),
+    url('./src/assets/imagenes/Biblia.jpg');
   display: flex;
   flex-direction: column;
   align-items: center;
