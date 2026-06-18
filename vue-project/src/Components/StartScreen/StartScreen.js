@@ -1,11 +1,10 @@
-// StartScreen.js  (Options API — igual que tu código original)
-
 export default {
   name: 'StartScreen',
 
   data() {
     return {
-      audioOn: this.$audio.enabled   
+      audioOn: this.$audio.enabled,
+      showInstructions: false
     }
   },
 
@@ -19,7 +18,7 @@ export default {
     },
 
     shutDownAudio() {
-      this.audioOn = this.$audio.toggle()   
+      this.audioOn = this.$audio.toggle()
     }
   }
 }

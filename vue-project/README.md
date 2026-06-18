@@ -36,3 +36,8 @@ npm run dev
 ```sh
 npm run build
 ```
+### A veces para correr el codigo debe de estar en vue-project, creo que normalmente esta en Bilia-game
+
+cd vue-project 
+
+### Se hizo un uso de IA como apoyo para realizar el mapa del juego, la cual fue Claude

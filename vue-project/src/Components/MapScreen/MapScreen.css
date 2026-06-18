@@ -151,3 +151,25 @@
     text-align: center;
   }
 }
+
+.btn-home {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  background: transparent;
+  border: 1.5px solid #c9922a;
+  color: #e8b84b;
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  padding: 0.45rem 1rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.btn-home:hover {
+  background: rgba(201, 146, 42, 0.15);
+  border-color: #e8b84b;
+}

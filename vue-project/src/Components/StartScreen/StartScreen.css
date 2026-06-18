@@ -119,17 +119,35 @@ button {
   color: var(--cream);
 }
 
-.btn-tertiary {
-  background: transparent;
-  border: 2px solid var(--olive);
-  color: var(--olive-light);
-}
-
-.btn-tertiary:hover {
+.btn-audio {
+  position: absolute;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  width: 42px;
+  height: 42px;
+border-radius: 50%;
   background: var(--olive);
-  color: var(--olive-light);
+  border: 2px solid var(--olive-light);
+  color: var(--cream);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
 }
 
+.btn-audio:hover {
+  background: var(--olive-light);
+  border-color: var(--cream);
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(90, 107, 46, 0.5);
+}
+
+.btn-audio:active {
+  transform: scale(0.95);
+}
 
 .verse-box {
   background: var(--parchment-dark);
@@ -162,4 +180,170 @@ button {
   .description {
     font-size: 1rem;
   }
+
+
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(30, 15, 5, 0.75);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.modal-card {
+  position: relative;
+  background: linear-gradient(145deg, #f4e9d0 0%, #fdf6e3 40%, #e8d5b0 100%);
+  border-radius: 4px;
+  max-width: 480px;
+  width: 100%;
+  padding: 2.4rem 2.2rem 2rem;
+  box-shadow:
+    0 0 0 1px #7a4a1e,
+    0 0 0 4px #e8d5b0,
+    0 0 0 5px #4a2c0a,
+    0 24px 60px rgba(30, 10, 2, 0.55);
+  text-align: center;
+}
+
+.modal-card::before {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border: 1px solid rgba(120, 70, 20, 0.22);
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.modal-corner {
+  position: absolute;
+  font-size: 0.85rem;
+  color: #c9922a;
+  opacity: 0.55;
+  line-height: 1;
+}
+.modal-corner.tl { top: 10px;    left: 12px; }
+.modal-corner.tr { top: 10px;    right: 12px; }
+.modal-corner.bl { bottom: 10px; left: 12px; }
+.modal-corner.br { bottom: 10px; right: 12px; }
+
+.modal-header { margin-bottom: 1.4rem; }
+
+.modal-emblem {
+  font-size: 1.8rem;
+  color: #5a6b2e;
+  margin-bottom: 0.3rem;
+  filter: sepia(0.4);
+}
+
+.modal-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.5rem;
+  color: #2c1a0e;
+  margin: 0 0 0.4rem;
+}
+
+.modal-divider {
+  color: #c9922a;
+  letter-spacing: 0.2em;
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+
+
+.modal-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.modal-steps li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: rgba(180, 120, 40, 0.07);
+  border: 1px solid rgba(120, 70, 20, 0.15);
+  border-radius: 3px;
+  padding: 0.65rem 0.85rem;
+}
+
+.step-icon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.modal-steps li div {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-size: 1rem;
+  color: #4a2c0a;
+  line-height: 1.5;
+}
+
+.modal-steps li strong {
+  display: block;
+  font-size: 1rem;
+  color: #2c1a0e;
+  margin-bottom: 0.1rem;
+}
+
+
+.modal-tip {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-size: 0.9rem;
+  color: #7a4a1e;
+  font-style: italic;
+  margin-bottom: 1.4rem;
+  opacity: 0.85;
+}
+
+
+.modal-close {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  background: linear-gradient(160deg, #7a4a1e 0%, #4a2c0a 100%);
+  color: #e8b84b;
+  border: none;
+  border-radius: 2px;
+  padding: 0.75rem 2.5rem;
+  cursor: pointer;
+  box-shadow: 0 3px 12px rgba(40, 15, 2, 0.4);
+  transition: all 0.2s ease;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+.modal-close:hover {
+  background: linear-gradient(160deg, #b8763a 0%, #7a4a1e 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(40, 15, 2, 0.45);
+}
+
+
+.modal-enter-active,
+.modal-leave-active {
+  transition: opacity 0.25s ease;
+}
+.modal-enter-active .modal-card,
+.modal-leave-active .modal-card {
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+.modal-enter-from,
+.modal-leave-to {
+  opacity: 0;
+}
+.modal-enter-from .modal-card,
+.modal-leave-to .modal-card {
+  transform: translateY(20px);
+  opacity: 0;
 }

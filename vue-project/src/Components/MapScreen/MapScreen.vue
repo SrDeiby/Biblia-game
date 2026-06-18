@@ -214,6 +214,10 @@
 
       </svg>
 
+<button class="btn-home" @click="goHome">
+  ← Inicio
+</button>
+
       <!-- Panel info -->
       <Transition name="region-fade">
         <div v-if="selectedRegion" class="region-info">

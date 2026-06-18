@@ -31,6 +31,10 @@ export default {
       this.selectedRegion = name
     },
 
+    goHome() {
+  this.$router.push('/')
+},
+
     goToGame() {
       const routeMap = {
         'Belén':     'belen',
