@@ -12,7 +12,7 @@
   --cream: #fdf6e3;
   --shadow-warm: rgba(42, 18, 4, 0.6);
 }
-
+/* Global Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
