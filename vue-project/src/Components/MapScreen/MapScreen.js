@@ -8,7 +8,7 @@ export default {
       regionData: {
         'Galilea': {
           icon: '🐟',
-          desc: 'Tierra de pescadores y milagros. Jesús pasó gran parte de su ministerio aquí.'
+          desc: 'Tierraa de pescadores y milagros. Jesús pasó gran parte de su ministerio aquí.'
         },
         'Nazaret': {
           icon: '🏡',
