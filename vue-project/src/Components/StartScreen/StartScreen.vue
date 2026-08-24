@@ -2,7 +2,7 @@
   <div class="start-screen">
     <div class="overlay">
       <div class="hero-card">
-        <p class="subtitle">Juego Bíblico Interactivo para Niños</p>
+        <p class="subtitle">Juego Bíblico Interactivo </p>
 
         <h1 class="title">
           Bible Quest
